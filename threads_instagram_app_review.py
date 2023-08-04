@@ -17,8 +17,8 @@ port_stem = PorterStemmer()
 vect = TfidfVectorizer()
 
 
-vector_form = pickle.load(open('C:/Users/ajith/Downloads/Threads An Instagram App Review/vector.pkl', 'rb'))
-load_model = pickle.load(open('C:/Users/ajith/Downloads/Threads An Instagram App Review/model.pkl', 'rb'))
+vector_form = pickle.load(open('vector.pkl', 'rb'))
+load_model = pickle.load(open('model.pkl', 'rb'))
 
 def stemming(content):
   con = re.sub('[^a-zA-Z]', ' ', content)
